@@ -1,0 +1,125 @@
+{
+	"VCAP_SERVICES": {
+		"connectivity": [
+			{
+				"label": "connectivity",
+				"provider": null,
+				"plan": "lite",
+				"name": "wftaskdec-conn-service",
+				"tags": [
+					"connectivity",
+					"conn",
+					"connsvc"
+				],
+				"instance_guid": "affd29ec-dbec-4af3-99df-bdc488f769c7",
+				"instance_name": "wftaskdec-conn-service",
+				"binding_guid": "91a524bc-6e3f-4cea-988c-5903d8ebb4b0",
+				"binding_name": null,
+				"credentials": {
+					"tenantmode": "dedicated",
+					"clientid": "sb-cloneaffd29ecdbec4af399dfbdc488f769c7!b105072|connectivity!b7",
+					"token_service_domain": "authentication.us10.hana.ondemand.com",
+					"credential-type": "binding-secret",
+					"token_service_url": "https://ecosystemadvanced-prs.authentication.us10.hana.ondemand.com",
+					"xsappname": "cloneaffd29ecdbec4af399dfbdc488f769c7!b105072|connectivity!b7",
+					"onpremise_proxy_ldap_port": "20001",
+					"onpremise_socks5_proxy_port": "20004",
+					"clientsecret": "91a524bc-6e3f-4cea-988c-5903d8ebb4b0$bPKvtkWwXEul55vcM-PSFav2Pi7efsnPyy8Bf1X6sVE=",
+					"onpremise_proxy_http_port": "20003",
+					"url": "https://ecosystemadvanced-prs.authentication.us10.hana.ondemand.com",
+					"onpremise_proxy_host": "connectivityproxy.internal.cf.us10.hana.ondemand.com",
+					"uaadomain": "authentication.us10.hana.ondemand.com",
+					"onpremise_proxy_port": "20003",
+					"verificationkey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo3A3LVzm3v7iuwBdFHZS\n5fnuutCsIbLryn0HZAK1JibZ10TN1HETn6xu7NcMWwYrL21v7SMyI7jKPjT/ZZ59\nTUlm5ueBFI1y06/ypuCmIscYygrQnoIgqNrhXotFVSsbRxmyKhQ5uevszYVDqeBZ\n/MzTyOlowrvj5LeP28Khn7mJCjgHawG2kDDgfXQqQIkw/nvJ9GrFYtEtfWBlXU65\nF2PgCsthl/S/v8GEfEZKsDtUMb0Gj41XTXiEF1o1uaUOi3mHOcTiXhVSm5d9n3yX\ngoNPdtFBLI2ZC55TwYfBRwTpu1CBWykKzShFsv1FJFqIStUy4mykmuNfNWBgtINh\nmQIDAQAB\n-----END PUBLIC KEY-----",
+					"identityzone": "ecosystemadvanced-prs",
+					"tenantid": "0d7a0bb7-7710-4145-806a-dab9020137c7",
+					"onpremise_proxy_rfc_port": "20001"
+				},
+				"syslog_drain_url": null,
+				"volume_mounts": []
+			}
+		],
+		"destination": [
+			{
+				"label": "destination",
+				"provider": null,
+				"plan": "lite",
+				"name": "wftaskdec-dest-service",
+				"tags": [
+					"destination",
+					"conn",
+					"connsvc"
+				],
+				"instance_guid": "cdb0984c-009a-4fff-9c86-94076970f35a",
+				"instance_name": "wftaskdec-dest-service",
+				"binding_guid": "84fb4d31-a4e6-42a5-a9d8-190a892381be",
+				"binding_name": null,
+				"credentials": {
+					"tenantmode": "dedicated",
+					"clientid": "sb-clonecdb0984c009a4fff9c8694076970f35a!b105072|destination-xsappname!b62",
+					"credential-type": "binding-secret",
+					"xsappname": "clonecdb0984c009a4fff9c8694076970f35a!b105072|destination-xsappname!b62",
+					"clientsecret": "84fb4d31-a4e6-42a5-a9d8-190a892381be$1Vr0tq-_sthIvrIZ9Js7e0uoxw9hQVZCjv9C0q44rgk=",
+					"uri": "https://destination-configuration.cfapps.us10.hana.ondemand.com",
+					"url": "https://ecosystemadvanced-prs.authentication.us10.hana.ondemand.com",
+					"uaadomain": "authentication.us10.hana.ondemand.com",
+					"instanceid": "cdb0984c-009a-4fff-9c86-94076970f35a",
+					"verificationkey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo3A3LVzm3v7iuwBdFHZS\n5fnuutCsIbLryn0HZAK1JibZ10TN1HETn6xu7NcMWwYrL21v7SMyI7jKPjT/ZZ59\nTUlm5ueBFI1y06/ypuCmIscYygrQnoIgqNrhXotFVSsbRxmyKhQ5uevszYVDqeBZ\n/MzTyOlowrvj5LeP28Khn7mJCjgHawG2kDDgfXQqQIkw/nvJ9GrFYtEtfWBlXU65\nF2PgCsthl/S/v8GEfEZKsDtUMb0Gj41XTXiEF1o1uaUOi3mHOcTiXhVSm5d9n3yX\ngoNPdtFBLI2ZC55TwYfBRwTpu1CBWykKzShFsv1FJFqIStUy4mykmuNfNWBgtINh\nmQIDAQAB\n-----END PUBLIC KEY-----",
+					"identityzone": "ecosystemadvanced-prs",
+					"tenantid": "0d7a0bb7-7710-4145-806a-dab9020137c7"
+				},
+				"syslog_drain_url": null,
+				"volume_mounts": []
+			}
+		],
+		"xsuaa": [
+			{
+				"label": "xsuaa",
+				"provider": null,
+				"plan": "application",
+				"name": "wftaskdec-uaa-service",
+				"tags": [
+					"xsuaa"
+				],
+				"instance_guid": "4616e1e2-96a3-408c-8a0e-2ce16746dceb",
+				"instance_name": "wftaskdec-uaa-service",
+				"binding_guid": "8d2e15c6-7d68-4b59-b464-19de725bb8f6",
+				"binding_name": null,
+				"credentials": {
+					"tenantmode": "shared",
+					"sburl": "https://internal-xsuaa.authentication.us10.hana.ondemand.com",
+					"subaccountid": "0d7a0bb7-7710-4145-806a-dab9020137c7",
+					"credential-type": "instance-secret",
+					"clientid": "sb-sap-dev-teams!t105072",
+					"xsappname": "sap-dev-teams!t105072",
+					"clientsecret": "t4vTK3f9JDuyCKKQsBqPA2XAqDA=",
+					"url": "https://ecosystemadvanced-prs.authentication.us10.hana.ondemand.com",
+					"uaadomain": "authentication.us10.hana.ondemand.com",
+					"verificationkey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo3A3LVzm3v7iuwBdFHZS\n5fnuutCsIbLryn0HZAK1JibZ10TN1HETn6xu7NcMWwYrL21v7SMyI7jKPjT/ZZ59\nTUlm5ueBFI1y06/ypuCmIscYygrQnoIgqNrhXotFVSsbRxmyKhQ5uevszYVDqeBZ\n/MzTyOlowrvj5LeP28Khn7mJCjgHawG2kDDgfXQqQIkw/nvJ9GrFYtEtfWBlXU65\nF2PgCsthl/S/v8GEfEZKsDtUMb0Gj41XTXiEF1o1uaUOi3mHOcTiXhVSm5d9n3yX\ngoNPdtFBLI2ZC55TwYfBRwTpu1CBWykKzShFsv1FJFqIStUy4mykmuNfNWBgtINh\nmQIDAQAB\n-----END PUBLIC KEY-----",
+					"apiurl": "https://api.authentication.us10.hana.ondemand.com",
+					"identityzone": "ecosystemadvanced-prs",
+					"identityzoneid": "0d7a0bb7-7710-4145-806a-dab9020137c7",
+					"tenantid": "0d7a0bb7-7710-4145-806a-dab9020137c7",
+					"zoneid": "0d7a0bb7-7710-4145-806a-dab9020137c7"
+				},
+				"syslog_drain_url": null,
+				"volume_mounts": []
+			}
+		]
+	},
+"SCENARIO": "onpremise",
+"BTP_LANDSCAPE": "us10",
+"BTP_ACCOUNT_NAME": "ecosystemadvanced-prs",
+"XSUAA_CS_URL_SUFFIX": "aws-live",
+"BTP_SCOPES": "api://sap-dev-teams.cfapps.us10.hana.ondemand.com/botid-1e8dd446-5fdd-4881-9afe-574e81346c78/access_as_user",
+"CONNECTION_NAME_GRAPH": "GraphConnection",
+"CONNECTION_NAME_BTP": "BTPConnection",
+"MICROSOFT_BLOB_CONTAINER_NAME": "botstorage",
+"MICROSOFT_BLOB_CONNECTION_STRING": "DefaultEndpointsProtocol=https;AccountName=businessbotswk743;AccountKey=uImU1OHouES0tit2Hl32TKiDBT6d+IH8o4ktm2UlSE5RYoD37jMCR64qZ7WVbIB3pEl50hzy0SJB+ASt2pwBkg==;EndpointSuffix=core.windows.net",
+"DOMAIN": "sap-dev-teams.cfapps.us10.hana.ondemand.com",
+"MICROSOFT_APP_ID": "1e8dd446-5fdd-4881-9afe-574e81346c78",
+"MICROSOFT_APP_PASSWORD": "CcL8Q~hQNwfpj72jUaxeo1PCqa4bQzRe~ZaI0b4u",
+"MICROSOFT_AD_TENANT_ID": "3d666e9a-d159-4182-8058-d9d211279d15",
+"TEAMS_APP_EXTERNAL_ID": "be38b2a7-da60-4db7-b393-30e476553bc0",
+"PORT":"4004"
+}
