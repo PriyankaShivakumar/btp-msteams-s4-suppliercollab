@@ -46,12 +46,14 @@ server.post('/em/po-attention', async(req, res) => {
     //const prId = req.body.NUMBER;
     //const wfId = req.body.WI_ID;
     const MAIL_ID = req.body.mailid;
+    console.log("MAIL_ID:"+MAIL_ID);
     for (const conversationReference of Object.values(botActivityHandler.conversationReferences)) {
       await adapter.continueConversation(conversationReference, async turnContext => {
         const userEmail = await getSingleMember(turnContext)
         console.log("email Id :"+userEmail.email)
         if(userEmail.email === MAIL_ID){
           const payload = req.body.poDetails;
+          console.log(payload);
           const card = await getEventPOCard(payload)
           await turnContext.sendActivity(MessageFactory.attachment(card));
         } 
