@@ -835,12 +835,12 @@ const scheduleCallCard = function (cardData,graphData,replyToId) {
               },
               {
                 type: "TextBlock",
-                text: "James Trott",
+                text: "Test User",
                 spacing: "Small"
               },
               {
                 type: "TextBlock",
-                text: "james.trott@saptfe.onmicrosoft.com",
+                text: "test@priyanka171013gmail.onmicrosoft.com",
                 spacing: "None"
               }
             ],
@@ -1044,12 +1044,12 @@ const scheduleCallPOEventCard = function (cardData,graphData,replyToId) {
               },
               {
                 type: "TextBlock",
-                text: "James Trott",
+                text: "Test User",
                 spacing: "Small"
               },
               {
                 type: "TextBlock",
-                text: "james.trott@saptfe.onmicrosoft.com",
+                text: "test@priyanka171013gmail.onmicrosoft.com",
                 spacing: "None"
               }
             ],

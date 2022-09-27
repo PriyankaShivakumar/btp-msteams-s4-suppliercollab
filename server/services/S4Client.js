@@ -19,7 +19,7 @@ function formatDate(date){
 
 const createpoconfirmdetails = async (req, res) => {
     const confirmation = req.body;
-    const url =`/sap/opu/odata/sap/ZSB_PO_CONF/Confirmation`
+    const url =`/sap/opu/odata/sap/ZSB_PO_CONF2/Confirmation`
     try{
         const token = await getAzureToken(req);
         const data = {
@@ -40,7 +40,7 @@ const updatepoconfirmdetails =  async (req, res) => {
     const itemId = req.params.itemId;
     const seqNo = req.params.seqNo;
     const confirmation = req.body;
-    const url =`/sap/opu/odata/sap/ZSB_PO_CONF/Confirmation(Ebeln='${poId}',Ebelp='${itemId}',Etens='${seqNo}')`
+    const url =`/sap/opu/odata/sap/ZSB_PO_CONF2/Confirmation(Ebeln='${poId}',Ebelp='${itemId}',Etens='${seqNo}')`
     try{
         const token = await getAzureToken(req);
         const data = {
@@ -61,7 +61,7 @@ const deletepoconfirmdetails =  async (req, res) => {
     const poId = req.params.poId;
     const itemId = req.params.itemId;
     const seqNo = req.params.seqNo;
-    const url =`/sap/opu/odata/sap/ZSB_PO_CONF/Confirmation(Ebeln='${poId}',Ebelp='${itemId}',Etens='${seqNo}')`
+    const url =`/sap/opu/odata/sap/ZSB_PO_CONF2/Confirmation(Ebeln='${poId}',Ebelp='${itemId}',Etens='${seqNo}')`
     try{
         const token = await getAzureToken(req);
         let response = await executeS4API(url,"delete","",token);

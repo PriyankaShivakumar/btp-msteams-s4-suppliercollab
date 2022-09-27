@@ -100,8 +100,8 @@ class GraphClient {
         attendees: [
           {
             emailAddress: {
-              address: 'caroline.bushell@saptfe.onmicrosoft.com',
-              name: 'caroline bushell'
+              address: 'azure@priyanka171013gmail.onmicrosoft.com',
+              name: 'Azure User'
             },
             type: 'required'
           }
@@ -114,7 +114,6 @@ class GraphClient {
       const installApps = await this.getInstalledApps()
       const teamAppId = installApps.value[0].id
       console.log("Team App ID :"+ teamAppId)
-
       const createdEvent = await this.graphClient.api(`/me/calendar/events`).post(event);
       const chatId = decodeURIComponent(createdEvent.onlineMeeting.joinUrl).split("/")[5]
       console.log("Chat App ID :"+ chatId)

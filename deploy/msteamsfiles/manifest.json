@@ -2,7 +2,7 @@
     "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.9/MicrosoftTeams.schema.json",
     "manifestVersion": "1.9",
     "version": "1.0.0",
-    "id": "863f2ce9-fd91-4245-99ad-d4327244c26b",
+    "id": "be38b2a7-da60-4db7-b393-30e476553bc0",
     "packageName": "com.sap.sfsf.leaverequest",
     "developer": {
         "name": "SAP",
